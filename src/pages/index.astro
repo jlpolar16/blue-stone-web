@@ -24,12 +24,22 @@
   @font-face {
     font-family: "Chillax";
     src: url("/fonts/Chillax-Medium.otf") format("opentype");
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
-}
-h1 {
+  }
+
+  @font-face {
+    font-family: "Chillax";
+    src: url("/fonts/Chillax-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
     font-family: "Chillax", sans-serif;
+    font-weight: 700; /* Usa Chillax-Bold en iOS y Mac por igual */
     font-size: 3.5rem;
     margin: 0.5rem 0;
   }
