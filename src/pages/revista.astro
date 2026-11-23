@@ -9,7 +9,7 @@
   <body>
     <main class="contenedor">
       <span class="etiqueta">PRÓXIMAMENTE</span>
-      <h1>Edición #01 en preparación</h1>
+      <h1>EDICIÓN #01</h1>
       <p>Muy pronto podrás leer aquí nuestra primera revista interactiva.</p>
       <a href="/" class="boton">Volver al inicio</a>
     </main>
@@ -17,6 +17,22 @@
 </html>
 
 <style>
+  @font-face {
+    font-family: "Chillax";
+    src: url("/fonts/Chillax-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Chillax";
+    src: url("/fonts/Chillax-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
   body {
     margin: 0;
     background-color: #070d19;
@@ -27,15 +43,18 @@
     align-items: center;
     min-height: 100vh;
     padding: 1.5rem;
+    box-sizing: border-box;
   }
 
   .contenedor {
-    max-width: 520px;
+    max-width: 600px;
     width: 100%;
-    padding: 2.5rem;
+    padding: 3rem;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     text-align: center;
   }
 
@@ -47,11 +66,16 @@
   }
 
   h1 {
-    margin: 0.75rem 0;
+    font-family: "Chillax", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    margin: 0.5rem 0;
+    letter-spacing: -0.03em;
   }
 
   p {
     color: #94a3b8;
+    line-height: 1.6;
     margin-bottom: 2rem;
   }
 
@@ -60,8 +84,6 @@
     background: #0284c7;
     color: white;
     text-decoration: none;
-    padding: 0.8rem 1.4rem;
+    padding: 0.85rem 1.5rem;
     border-radius: 8px;
-    font-weight: 600;
-  }
-</style>
+    font-weight:
