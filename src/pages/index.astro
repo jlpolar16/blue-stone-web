@@ -11,6 +11,10 @@
       <h1>BLUE STONE</h1>
       <p>Comunidad de investigación en Ingeniería de Minas, Geología y Geofísica.</p>
       <a href="/revista" class="boton">Explorar Revista Interactiva</a>
+   <figure class="foto-equipo">
+        <img src="/images/equipo-bluestone.jpeg" alt="Equipo fundador de Blue Stone" />
+        <figcaption>Equipo fundador — Blue Stone UNSA</figcaption>
+      </figure>
     </main>
   </body>
 </html>
@@ -77,5 +81,24 @@ h1 {
     padding: 0.85rem 1.5rem;
     border-radius: 8px;
     font-weight: 600;
+  }
+  .foto-equipo {
+    margin: 2.5rem 0 0 0; /* Separación respecto al botón de arriba */
+  }
+
+  .foto-equipo img {
+    width: 100%; /* Se adapta al ancho de la tarjeta automáticamente */
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: block;
+    object-fit: cover;
+  }
+
+  .foto-equipo figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
   }
 </style>
